@@ -1,0 +1,79 @@
+body {
+    font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+    /* Richer, warmer background gradient */
+    background: linear-gradient(135deg, #fff2eb 0%, #fde8e8 50%, #fce4ec 100%);
+    color: #444;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 16px;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 480px;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 40px 24px;
+    border-radius: 20px;
+    /* Soft warm glow shadow */
+    box-shadow: 0 10px 30px rgba(184, 84, 102, 0.08);
+    border: 1px solid #fce8e6;
+    box-sizing: border-box;
+}
+
+.favorite-photo {
+    /* Equal width/height keeps proportions sharp on mobile */
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 16px;
+    /* Warm rose border */
+    border: 4px solid #f3b6bd;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+
+h1 {
+    font-size: 1.6rem;
+    /* Warmer deep terracotta/rose red */
+    color: #a4384d;
+    margin-bottom: 16px;
+    font-weight: 600;
+}
+
+p {
+    font-size: 1.05rem;
+    line-height: 1.75;
+    margin-bottom: 20px;
+    color: #4a3e3e;
+}
+
+.sign-off {
+    font-style: italic;
+    color: #8c6b6b;
+    font-size: 1rem;
+}
+
+/* Responsive tweaks for smaller screens */
+@media (max-width: 480px) {
+    .container {
+        padding: 32px 20px;
+    }
+
+    .favorite-photo {
+        width: 140px;
+        height: 140px;
+    }
+
+    h1 {
+        font-size: 1.45rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+}
